@@ -1,0 +1,191 @@
+.body{
+
+    background-color: rgb(0, 0, 0);
+}
+
+.header{
+     color: aliceblue;
+     display:flex;
+     height: 150px;
+}
+
+.header .second{
+    margin-left: 25%;
+    display: flex;
+}
+
+.header h1{
+    margin-right:20px ;
+    margin-left:20px ;
+}
+.zerothimg>img{
+    margin-left: 0px;
+    height: 170px;
+    animation-name: zeroimg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    left: 0%;
+}
+@keyframes zeroimg {
+    0%   {padding-top: 0px;}
+    25%  {padding-top: 20px;}
+    50%  {padding-top: 0px;}
+    75%  {padding-top: 10px;}
+    100% {padding-top: 0px;}
+  }
+.firstimg>img{
+    margin-left: 0px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(72deg);}
+    50%  {transform: rotate(144deg);}
+    75%  {transform: rotate(216deg);}
+    100% {transform: rotate(288deg);}
+  }
+
+
+.mainbody {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.sub1, .sub2, .sub3,.sub4 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 290px;
+    border-radius: 10%;
+    transition: 3s;
+    margin: 30px;
+    text-align: center;
+    background-color: #b35831;
+}
+.sub1>img, .sub2>img, .sub3>img,.sub4>img{
+    border-radius: 20%;
+}
+
+.image1{
+    background-image: url('https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iPeraoMnxTC8/v1/-1x-1.jpg');
+    background-size:contain;
+    height: 150px;
+    border-radius: 10%;
+}
+
+
+
+.sub1:hover, .sub2:hover, .sub3:hover, .sub4:hover {
+    border-radius: 15%;
+    box-shadow: 10px 10px 20px rgb(190, 110, 53,0.8);
+    padding: 15px;
+    background-color: #be6e35;
+    transform: rotate(360deg);
+    height: 250px;
+    width: 350px;
+}
+
+.part0{
+    margin: 30PX;
+    background-color: #b35831;
+    border-radius: 3%;
+    padding: 12px;
+    transition: 2s;
+
+}
+
+.part1,.part2,.part3,.part4,.part5,.part6,.part7,.part8,.part9{
+    margin: 30PX;
+    background-color: #b35831;
+    height: 100px;
+    width: 500px;
+    border-radius: 3%;
+    padding: 12px;
+    transition: 2s;
+}
+
+.part0:hover,.part1:hover,.part2:hover,.part3:hover,.part4:hover,.part5:hover,.part6:hover,.part7:hover,.part8:hover,.part9:hover{
+    box-shadow: 10px 10px 20px  rgb(190, 110, 53,0.8);
+    padding:10px;
+    /* background-color: rgb(216, 190, 159); */
+    background-color: #be6e35;
+    
+}
+
+.subbody1{
+    display: flex;
+    flex-direction: row;
+}
+
+.subbody2{
+    display: flex;
+    flex-direction: row;
+}
+
+.subbody3{
+    display: flex;
+    flex-direction: row;
+}
+
+.subbody4{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+.header .second{
+    margin-left: 0%;
+    display: flex;
+}
+.mainbody {
+    display: flex;
+    flex-direction: column;
+   
+}
+.subbody1{
+    display: flex;
+    flex-direction: column;
+}
+
+.subbody2{
+    display: flex;
+    flex-direction: column;
+}
+
+.subbody3{
+    display: flex;
+    flex-direction: column;
+}
+
+.subbody4{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+@media (max-width: 580px) {
+    .part1,.part2,.part3,.part4,.part5,.part6,.part7,.part8,.part9{
+        margin: 30PX;
+        background-color: #b35831;
+        height: 150px;
+        width: 150px;
+        border-radius: 3%;
+        padding: 12px;
+        transition: 2s;
+    }
+    .part0{
+        margin: 30PX;
+        background-color: #b35831;
+        border-radius: 3%;
+        padding: 12px;
+        transition: 2s;
+        height: 150px;
+        width: 150px;
+    
+    }
+}
